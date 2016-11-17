@@ -1,0 +1,11 @@
+plugins {
+	id "java"
+	id "idea"
+}
+
+jar {
+	
+	manifest {
+		attributes("Main-Class": "net.shadowfacts.encode2png.Main")
+	}
+}
