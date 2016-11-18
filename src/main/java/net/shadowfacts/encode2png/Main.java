@@ -19,7 +19,7 @@ public class Main {
 			if (s.startsWith("-m")) {
 				mode = s.split("=")[1].toLowerCase();
 			} else if (s.startsWith("-I")) {
-				interactive = Boolean.parseBoolean(s.split("=")[1]);
+				interactive = true;
 			} else if (s.startsWith("-i")) {
 				input = s.split("=")[1];
 			} else if (s.startsWith("-o")) {

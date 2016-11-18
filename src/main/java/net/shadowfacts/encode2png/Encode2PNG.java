@@ -25,8 +25,8 @@ public class Encode2PNG {
 		byte[] buffer = new byte[4];
 		for (int i = 1; ; i++) {
 			int result = in.read(buffer);
-			image.setRGB(i % size, i / size, encode(buffer));
 			if (result == -1) break;
+			image.setRGB(i % size, i / size, encode(buffer));
 		}
 		ImageIO.write(image, "png", output);
 	}
